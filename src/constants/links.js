@@ -1,3 +1,8 @@
+/*
+id is a designated id for the link
+text what it will display
+url is the destination of the link
+*/
 const data = [
   {
     id: 1,

@@ -11,7 +11,7 @@ import {
 const data = [
   {
     id: 1,
-    icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
+    icon: <FaInstagramSquare className="social-icon"></FaInstagramSquare>,
     url: "https://www.twitter.com",
   },
   {
