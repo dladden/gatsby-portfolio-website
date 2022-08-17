@@ -19,5 +19,22 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+
+    // Strapi Plugin provided by Gatsby called: gatsby-source-strapi
+    // apiURL must be pointed to where the strapi application is siting to alow the access to data
+    //
+    {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `http://localhost:1337`,
+        queryLimit: 100, // Defaults to 100
+        collectionTypes: [`experience`],
+        //singleTypes: [`home-page`, `contact`],
+        loginData: {
+          identifiers: "",
+          password: "",
+        },
+      },
+    },
   ],
 }

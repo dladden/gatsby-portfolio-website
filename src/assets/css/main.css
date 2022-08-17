@@ -23,9 +23,9 @@ Variables
   --clr-primary-7: hsl(184, 65%, 59%);
   --clr-primary-8: hsl(184, 80%, 74%);
   --clr-primary-9: hsl(185, 94%, 87%);
-  --clr-primary-10: hsl(0, 0%, 73%);
+  --clr-primary-10: hsl(40, 2%, 66%);
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-1: hsl(0, 0%, 3%);
   --clr-grey-3: hsl(209, 34%, 30%);
   --clr-grey-4: hsl(209, 28%, 39%);
   /* grey used for paragraphs */
@@ -41,7 +41,9 @@ Variables
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.2rem;
-  --radius: 50rem;
+  --radius: 0.25rem;
+  --radius-btn: 50rem;
+  --radius-sections: 5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
@@ -140,7 +142,7 @@ p {
   border: 2px solid transparent;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: var(--radius);
+  border-radius: var(--radius-btn);
 }
 .btn:hover {
   color: var(--clr-primary-1);
@@ -510,7 +512,7 @@ Services
   background: var(--clr-white);
   padding: 3rem 1.5rem;
   margin-bottom: 2rem;
-  border-radius: var(--radius);
+  border-radius: var(--radius-sections);
   text-align: center;
   -webkit-transition: var(--transition);
   transition: var(--transition);
