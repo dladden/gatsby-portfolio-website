@@ -20,21 +20,24 @@ const query = graphql`
     }
   }
 `
-//p
+//The Experience component accesses the graphQL query and displays the values as an array and iterating through
+//the description values. Finally, it checks to see which company is selected for highlited btn. A sort querry is set
+//fields: created_at. order: DESC
 const Jobs = () => {
-  const data = useStaticQuery(query)
+  const data = useStaticQuery(query) //querying with GraphQL at build time stored in data object
   //console.log(data)
   const {
     allStrapiExperiences: { nodes: experiences },
-  } = data //storing query in data
-  //React use-state hook for the job selection
+  } = data //data provides allStrapiExperiences query from nodes with alises 'experiences'
+  //React Use-State hook for the job selection
   const [value, setValue] = React.useState(0)
-  const { position, company, date, desc } = experiences[value]
+  const { position, company, date, desc } = experiences[value] //storing the query data in experiences array
   return (
     <section className="section jobs">
       <Title title="Experience" />
+      {/* JOB CONTAINER  */}
       <div className="jobs-center">
-        {/* btn container  */}
+        {/* BTN CONTAINER  */}
         <div className="btn-container">
           {experiences.map((item, index) => {
             return (
@@ -48,11 +51,11 @@ const Jobs = () => {
             )
           })}
         </div>
-        {/* job info  */}
+        {/* JOB INFO  */}
         <article className="job-info">
           <h3>{position}</h3>
           <h4>{company}</h4>
-          <p classNme="job-date">{date}</p>
+          <p className="job-date">{date}</p>
           {desc.map(item => {
             return (
               <div key={item.id} className="job-desc">

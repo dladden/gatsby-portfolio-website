@@ -28,7 +28,7 @@ module.exports = {
       options: {
         apiURL: `http://localhost:1337`,
         queryLimit: 100, // Defaults to 100
-        collectionTypes: [`experience`],
+        collectionTypes: [`experiences`, `projects`],
         //singleTypes: [`home-page`, `contact`],
         loginData: {
           identifiers: "",
