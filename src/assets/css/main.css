@@ -729,7 +729,7 @@ Projects
 }
 .project-icon {
   color: var(--clr-primary-5);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-right: 0.5rem;
   transition: var(--transition);
 }
