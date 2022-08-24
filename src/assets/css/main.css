@@ -29,7 +29,7 @@ Variables
   --clr-grey-3: hsl(209, 34%, 30%);
   --clr-grey-4: hsl(209, 28%, 39%);
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-5: hsl(0, 0%, 83%);
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
@@ -716,7 +716,7 @@ Projects
 .about-stack span {
   display: inline-block;
   background: var(--clr-grey-9);
-  color: var(--clr-grey-5);
+  color: var(--clr-primary-10);
   margin: 0.25rem;
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);

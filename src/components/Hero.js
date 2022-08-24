@@ -11,8 +11,8 @@ const Hero = () => {
         <article className="hero-info">
           <div>
             <div className="underline"></div>
-            <h1>Denys</h1>
-            <h4>Developer</h4>
+            <h1>Hi, I'm Denys</h1>
+            <h4>DevOps, Web Dev, Fullstack, Cloud Engineering</h4>
             <Link to="/contact" className="btn">
               {" "}
               CONTACT ME{" "}

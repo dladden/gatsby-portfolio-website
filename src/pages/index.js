@@ -6,7 +6,8 @@ import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Seo from "../components/Seo"
 //Index passes the 'data' property then gives it an javascript alias of 'projects'. Then in a return section sets up all the components used
-// in the index page like Hero.js, Services.js, Jobs.js Projects.js where
+//in the index page like Hero.js, Services.js, Jobs.js Projects.js where
+//Once "export const query = graphql" is set up the {data} can be accessed from that query in the function
 const IndexPage = ({ data }) => {
   //console.log(data)
   const {
