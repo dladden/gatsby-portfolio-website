@@ -41,7 +41,7 @@ Variables
   --ff-secondary: "Open Sans", sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.2rem;
-  --radius: 0.25rem;
+  --radius: 0.75rem;
   --radius-btn: 50rem;
   --radius-sections: 5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -865,7 +865,7 @@ About Page
 }
 .about-img-svg {
   margin-bottom: 2rem;
-  height: 25rem;
+  /* height: 25rem; */
   width: 100%;
   display: block;
 }
