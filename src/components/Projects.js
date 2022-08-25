@@ -19,7 +19,7 @@ const Projects = ({ projects, title, showLink }) => {
       {/* A conditional link only shows if its in the index page not projects page */}
       {showLink && (
         <Link to="/projects" className="btn center-btn">
-          projects
+          All Projects
         </Link>
       )}
     </section>
