@@ -4,15 +4,15 @@ import { FaAlignJustify } from "react-icons/fa"
 import pageLinks from "../constants/links"
 import { Link } from "gatsby"
 
-//toggle button for phone view
-//setting the links as constants (constants/links.js) to implement changes quickly!
-const Navbar = () => {
+//Toggle button for phone view
+//Setting the links as constants (constants/links.js) to implement changes quickly!
+const Navbar = ({ toggleSidebar }) => {
   return (
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} alt="DL logo" />
-          <button type="button" className="toggle-btn">
+          <button type="button" className="toggle-btn" onClick={toggleSidebar}>
             <FaAlignJustify />
           </button>
         </div>

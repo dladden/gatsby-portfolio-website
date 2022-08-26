@@ -13,7 +13,7 @@ const ProjectsPage = ({
     <>
       <main>
         <section className="projects-page">
-          <Projects title="all projects" projects={projects_} />
+          <Projects title="All Projects" projects={projects_} />
         </section>
       </main>
     </>

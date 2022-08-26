@@ -7,7 +7,7 @@ import {
   FaBehanceSquare,
   FaTwitterSquare,
 } from "react-icons/fa"
-
+//Social_links are placed into an array. They are iterated in Hero.js and Footer.js components
 const data = [
   {
     id: 1,
