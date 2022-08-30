@@ -29,7 +29,7 @@ module.exports = {
         apiURL: `http://localhost:1337`,
         queryLimit: 100, // Defaults to 100
         collectionTypes: [`experiences`, `projects`],
-        singleTypes: [`about-page`],
+        singleTypes: [`about-page`, `footer`],
         loginData: {
           identifiers: "",
           password: "",

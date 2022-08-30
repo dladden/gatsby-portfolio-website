@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../assets/images/portfolio-logo-01.svg"
+import logo from "../assets/images/logo03.svg"
 import { FaAlignJustify } from "react-icons/fa"
 import pageLinks from "../constants/links"
 import { Link } from "gatsby"

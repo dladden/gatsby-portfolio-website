@@ -26,7 +26,7 @@ const Project = ({
         {/* slug bounded to the project title which is used to create a nested structure programmatically in folder pages/projects*/}
         <span className="project-number">0{index + 1}</span>
         <Link to={`/projects/${slug}`} className="project-slug">
-          <h3>{title}</h3>
+          <h3> {title} </h3>
         </Link>
         <p className="project-desc">{description}</p>
         <div className="project-stack">
