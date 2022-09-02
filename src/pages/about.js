@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Title from "../components/Title"
+import logo from "../assets/images/sign.svg"
 import Seo from "../components/Seo"
 //About Page utilizes Strapi's single content type query to access data.
 //Additionaly in order to use an svg image the image is called on from a public URL
@@ -27,6 +28,9 @@ const About = ({ data }) => {
               })}
             </div>
           </article>
+        </div>
+        <div className="about-page-sign">
+          <img src={logo} alt="DL logo" />
         </div>
       </section>
     </>

@@ -16,23 +16,23 @@ Variables
   --clr-primary-1: hsl(43, 11%, 32%);
   --clr-primary-2: hsl(0, 0%, 73%);
   --clr-primary-3: hsl(50, 35%, 75%);
-  --clr-primary-4: hsl(184, 77%, 34%);
+  --clr-primary-4: hsl(0, 0%, 36%);
   --clr-primary-5: #e1d6c4;
   /* lighter shades of primary color */
-  --clr-primary-6: hsl(185, 57%, 50%);
-  --clr-primary-7: hsl(184, 65%, 59%);
+  --clr-primary-6: hsl(0, 0%, 1%);
+  --clr-primary-7: hsl(0, 0%, 3%);
   --clr-primary-8: hsl(39, 70%, 87%);
   --clr-primary-9: hsl(38, 7%, 32%);
   --clr-primary-10: hsl(40, 2%, 66%);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(0, 0%, 3%);
   --clr-grey-3: hsl(0, 0%, 42%);
-  --clr-grey-4: hsl(35, 30%, 72%);
+  --clr-grey-4: hsl(34, 24%, 41%);
   /* grey used for paragraphs */
   --clr-grey-5: hsl(0, 0%, 83%);
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-10: hsl(40, 50%, 95%);
   --clr-green-dark: hsl(125, 67%, 35%);
   --clr-grey-dark: rgb(171, 171, 171);
   --clr-red-light: hsl(360, 71%, 66%);
@@ -262,7 +262,7 @@ Navbar
 
   .nav-links a {
     margin-right: 2rem;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     color: var(--clr-grey-1);
     font-weight: bold;
     letter-spacing: var(--spacing);
@@ -347,7 +347,7 @@ Sidebar Animation
 ===============
 */
 .sidebar-links li {
-  animation: slideRight 0.5s ease-in-out 0.3s forwards;
+  animation: slideRight 0.4s ease-in-out 0.2s forwards;
 }
 .sidebar-links li:nth-of-type(1) {
   animation-delay: 0.25s;
@@ -376,7 +376,7 @@ Sidebar Animation
 }
 .sidebar-icons li {
   opacity: 0;
-  animation: slideUp 0.5s ease-in-out 0.3s forwards;
+  animation: slideUp 0.4s ease-in-out 0.2s forwards;
 }
 .sidebar-icons li a {
   color: var(--clr-grey-1);
@@ -448,6 +448,13 @@ Hero
 .hero-info h4 {
   color: var(--clr-grey-5);
 }
+
+.hero-info h1 {
+  background-image: linear-gradient(120deg, #e1d6c4, rgb(86, 86, 86) 9%);
+  background-clip: text;
+  color: transparent;
+}
+
 .hero-icons {
   justify-items: flex-start;
 }
@@ -729,7 +736,7 @@ Projects
   margin-top: 0.5rem;
 }
 .project-icon {
-  color: var(--clr-primary-5);
+  color: var(--clr-primary-2);
   font-size: 1.5rem;
   margin-right: 0.5rem;
   transition: var(--transition);
@@ -777,6 +784,10 @@ Projects
     grid-row: 1 / 1;
     text-align: left;
   }
+}
+
+.project-links {
+  color: var(--clr-green-dark);
 }
 
 /*
@@ -862,9 +873,10 @@ Project Template Page
 */
 .project-template-page {
   padding-top: 3rem;
-  text-align: center;
+  text-align: left;
 }
 .project-template-page h2 {
+  text-align: center;
   text-transform: uppercase;
 }
 .project-template-page p {
@@ -919,6 +931,14 @@ About Page
   margin-right: 0.25rem;
   font-size: 1rem;
 }
+
+.about-page-sign {
+  display: grid;
+  place-items: center;
+  padding: 30px;
+  height: 40px;
+}
+
 @media screen and (min-width: 992px) {
   .about-center {
     display: grid;

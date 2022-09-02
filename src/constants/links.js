@@ -6,22 +6,22 @@ url is the destination of the link
 const data = [
   {
     id: 1,
-    text: "home",
+    text: "Home",
     url: "/",
   },
   {
     id: 2,
-    text: "about",
+    text: "AboutMe",
     url: "/about/",
   },
   {
     id: 3,
-    text: "projects",
+    text: "Projects",
     url: "/projects/",
   },
   {
     id: 5,
-    text: "contact",
+    text: "Connect",
     url: "/contact/",
   },
 ]
