@@ -1,7 +1,7 @@
 import React from "react"
 import Title from "./Title"
 import services from "../constants/services"
-import logo from "../assets/images/cover01.png"
+
 // services component will display my services and it will be called on from other pages
 const Services = () => {
   return (

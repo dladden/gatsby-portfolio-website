@@ -5,7 +5,16 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  /* Providing sites meta data that describes the site and its tittle for better engine search */
+  /* Additionaly adding a prop which displays the page name first with the titleTemplate and more set up for the card*/
+  siteMetadata: {
+    title: `Denys Ladden Portfolio`,
+    description: `Denys Ladden. Web Developer. This is my Portfolio Website developed with Gatsby and Strapi architecture. `,
+    titleTemplate: `%s | Denys`,
+    url: `https://portfolio-temp-deni.netlify.app`,
+    twitterUsername: `denysladden`,
+    image: `/cover.png`,
+  },
 
   plugins: [
     `gatsby-plugin-image`,
@@ -18,6 +27,7 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
+    //Gatsby react helmet works in a build cycle and build the meta tags
     `gatsby-plugin-react-helmet`,
 
     // Strapi Plugin provided by Gatsby called: gatsby-source-strapi

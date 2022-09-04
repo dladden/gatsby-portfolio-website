@@ -871,8 +871,17 @@ Pages
 Project Template Page
 ===============
 */
+
+.project-template-img {
+  /* padding-top: 0.5rem; */
+  /* width: 90vw; */
+  margin: 0 auto;
+  max-width: 1170px;
+  background-size: cover;
+}
+
 .project-template-page {
-  padding-top: 3rem;
+  /* padding-top: 1.2rem; */
   text-align: left;
 }
 .project-template-page h2 {

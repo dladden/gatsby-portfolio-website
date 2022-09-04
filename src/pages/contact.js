@@ -3,6 +3,7 @@ import Seo from "../components/Seo"
 const contact = () => {
   return (
     <>
+      <Seo title="Connect" />
       <section className="contact-page">
         <article className="contact-form">
           <h3>Contact Me</h3>
