@@ -1,7 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Link } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { FaGithub, FaBuffer, FaLink } from "react-icons/fa"
 import { BsPersonBoundingBox, BsCalendarCheck, BsHeart } from "react-icons/bs"
 import Seo from "../../components/Seo"
@@ -34,13 +32,25 @@ const ProjectTemplate = ({
               <article className="project-text">
                 <h2>{title}</h2>
                 <div className="project-links">
-                  <a href={github}>
+                  <a
+                    href={data.strapiProjects.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaGithub className="project-icon"></FaGithub>
                   </a>
-                  <a href={tools}>
+                  <a
+                    href={data.strapiProjects.tools}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaBuffer className="project-icon"></FaBuffer>
                   </a>
-                  <a href={url}>
+                  <a
+                    href={data.strapiProjects.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaLink className="project-icon"></FaLink>
                   </a>
                 </div>
@@ -49,17 +59,17 @@ const ProjectTemplate = ({
                   <article>
                     <BsPersonBoundingBox />
                     <h5>Client:</h5>
-                    <p>Personal</p>
+                    <p>{data.strapiProjects.client}</p>
                   </article>
                   <article>
                     <BsCalendarCheck />
                     <h5>Date:</h5>
-                    <p>2022</p>
+                    <p>{data.strapiProjects.date.split("-")[0]}</p>
                   </article>
                   <article>
                     <BsHeart />
                     <h5>Service:</h5>
-                    <p>SD</p>
+                    <p>{data.strapiProjects.service}</p>
                   </article>
                 </div>
               </article>
@@ -80,6 +90,9 @@ export const query = graphql`
       github
       tools
       url
+      client
+      date
+      service
       stack {
         id
         title

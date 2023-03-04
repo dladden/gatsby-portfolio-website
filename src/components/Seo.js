@@ -44,13 +44,12 @@ const SEO = ({ title, description, image, article }) => {
   }
   //Helmet returns the tittle provided in every page and the template added in the siteMetadata as well as provide
   //all the meta tags and the cover image for the quick and easy sharing card
+  //if article graph added then add the property open graph and content of article
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
-      //if article graph added then add the property open graph and content of
-      article
       {(article ? true : null) && <meta property="og:type" content="article" />}
       {seo.title && <meta property="og:title" content={seo.title} />}
       {seo.description && (

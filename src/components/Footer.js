@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { FaCircle } from "react-icons/fa"
 import socialLinks from "../constants/social_links"
-import { print } from "graphql"
+
 //Footer component iterates through the links array in social_links.js
 //This component is then used in global component Layout.js which is set up with Gatsby Browser APIs
 

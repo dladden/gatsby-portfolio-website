@@ -236,8 +236,10 @@ Navbar
 }
 .nav-header img {
   margin-bottom: -0.2rem;
+  margin-top: 0.4rem;
 }
 .toggle-btn {
+  margin-top: 0.5rem;
   font-size: 3rem;
   background: transparent;
   border-color: transparent;
@@ -675,6 +677,8 @@ Projects
   height: 19rem;
   z-index: 1;
 }
+.project-img-div {
+}
 .project-img::after {
   content: "";
   position: absolute;
@@ -738,7 +742,7 @@ Projects
 .project-icon {
   color: var(--clr-primary-2);
   font-size: 1.5rem;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
   transition: var(--transition);
 }
 .project-icon:hover {
@@ -759,9 +763,17 @@ Projects
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
   }
+  .project-img-div {
+    grid-column: 1 / span 8;
+    grid-column-end: 8;
+    grid-row: 1 / 1;
+    height: 30rem;
+    border-radius: var(--radius);
+    box-shadow: var(--dark-shadow);
+  }
   .project-img {
     grid-column: 1 / span 8;
-    /* grid-column-end: 8; */
+    grid-column-end: 8;
     grid-row: 1 / 1;
     height: 30rem;
     border-radius: var(--radius);
@@ -776,6 +788,10 @@ Projects
     grid-row: 1 / 1;
   }
   .project:nth-of-type(even) .project-img {
+    grid-column: 5 / -1;
+    grid-row: 1 / 1;
+  }
+  .project:nth-of-type(even) .project-img-div {
     grid-column: 5 / -1;
     grid-row: 1 / 1;
   }
@@ -846,6 +862,9 @@ Pages
 ===============
 */
 
+.plant {
+  width: 150px;
+}
 .project-template-page,
 .projects-page,
 .error-page,
@@ -898,6 +917,7 @@ Project Template Page
 }
 .project-template-img {
   border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
 }
 
 .project-icons {
@@ -1030,7 +1050,7 @@ Contact Page
 .contact-page {
   display: grid;
   place-items: center;
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 .contact-form {
   background: var(--clr-white);
