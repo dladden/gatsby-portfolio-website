@@ -171,16 +171,20 @@ p {
   }
 }
 /* added during recording */
-.underline {
+/* .underline {
   width: 5rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;
   background: var(--clr-primary-5);
   margin-left: auto;
   margin-right: auto;
-}
+} */
 .section-title {
   margin-bottom: 4rem;
+  text-align: center;
+}
+.section-projects {
+  margin-bottom: 9rem;
   text-align: center;
 }
 .bg-grey {
@@ -863,7 +867,13 @@ Pages
 */
 
 .plant {
-  width: 150px;
+  width: 200px;
+}
+.coffee {
+  padding-top: 0;
+  margin: 0 auto;
+  place-items: center;
+  width: 350px;
 }
 .project-template-page,
 .projects-page,
@@ -993,7 +1003,7 @@ About Page
   margin-bottom: 2rem;
   text-align: left;
 }
-.about-text .underline {
+.about-text {
   margin-left: 0;
   margin-right: 0;
 }

@@ -10,7 +10,7 @@ const data = [
   {
     id: 1,
     icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
-    url: "https://www.facebook.com/profile.php?id=100090632798905",
+    url: "https://www.facebook.com/dladden/",
   },
   {
     id: 2,

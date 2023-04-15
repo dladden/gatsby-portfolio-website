@@ -7,7 +7,7 @@ const contact = () => {
       <Seo title="Connect" />
       <section className="contact-page">
         <div className="plant">
-          <img className="plant" src={plant} alt="DL logo" />
+          <img className="plant" src={plant} alt="simple plant" />
         </div>
         <article className="contact-form">
           <h3>Contact Me</h3>

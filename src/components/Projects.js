@@ -2,12 +2,16 @@ import React from "react"
 import Title from "./Title"
 import Project from "./Project"
 import { Link } from "gatsby"
+import coffee from "../assets/images/coffee.gif"
 // Projects component will iterate through each project accessed from project.js while tracking id and index
 const Projects = ({ projects, title, showLink }) => {
   // console.log(props)
   return (
     <section className="section projects">
-      <Title title={title} />
+      <Title className="section-projects" title={title} />
+      <div className="coffee">
+        <img className="coffee" src={coffee} alt="" />
+      </div>
       {/* iterating through by using map property through projects accessed from project.js 
       in project.id and passing all properties from node using spread operator '...project'  */}
       <div className="section-center project-center">
