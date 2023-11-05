@@ -13,7 +13,7 @@ const Hero = () => {
             <div className="underline"></div>
             <h1>Hi, I'm Denys</h1>
             <h4>DevOps, Web Dev, Fullstack, Cloud Engineering</h4>
-            <Link to="/contact" className="btn">
+            <Link to="/contact" className="btn-contact btn">
               {" "}
               CONTACT ME{" "}
             </Link>

@@ -33,13 +33,14 @@ Variables
   --clr-grey-8: hsl(210, 31%, 80%);
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(40, 50%, 95%);
+  --clr-green-light: #5dbea3;
   --clr-green-dark: hsl(125, 67%, 35%);
   --clr-grey-dark: rgb(171, 171, 171);
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-white: #fff;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
-  --transition: all 0.3s linear;
+  --transition: all 0.2s linear;
   --spacing: 0.1rem;
   --radius: 0.75rem;
   --radius-btn: 50rem;
@@ -144,6 +145,9 @@ p {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius-btn);
 }
+.btn-contact {
+  padding: 0.375rem 1.1rem;
+}
 .btn:hover {
   color: var(--clr-primary-1);
   background: var(--clr-primary-8);
@@ -180,7 +184,6 @@ p {
   margin-right: auto;
 } */
 .section-title {
-  margin-bottom: 4rem;
   text-align: center;
 }
 .section-projects {
@@ -195,7 +198,7 @@ p {
 /* social links */
 .social-links {
   margin-top: 2rem;
-  width: 15rem;
+  width: 9rem;
   display: flex;
   justify-content: space-between;
 }
@@ -277,7 +280,6 @@ Navbar
   }
   .nav-links a:hover {
     color: var(--clr-primary-5);
-    box-shadow: 0px 2px var(--clr-primary-5);
   }
   .nav-center {
     display: grid;
@@ -353,22 +355,22 @@ Sidebar Animation
 ===============
 */
 .sidebar-links li {
-  animation: slideRight 0.4s ease-in-out 0.2s forwards;
+  animation: slideRight 0.1s ease-in-out 0.2s forwards;
 }
 .sidebar-links li:nth-of-type(1) {
-  animation-delay: 0.25s;
+  animation-delay: 0.15s;
 }
 .sidebar-links li:nth-of-type(2) {
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
 }
 .sidebar-links li:nth-of-type(3) {
-  animation-delay: 0.75s;
+  animation-delay: 0.45s;
 }
 .sidebar-links li:nth-of-type(4) {
-  animation-delay: 1s;
+  animation-delay: 0.6s;
 }
 .sidebar-links li:nth-of-type(5) {
-  animation-delay: 1.25s;
+  animation-delay: 0.6s;
 }
 @keyframes slideRight {
   0% {
@@ -382,25 +384,25 @@ Sidebar Animation
 }
 .sidebar-icons li {
   opacity: 0;
-  animation: slideUp 0.4s ease-in-out 0.2s forwards;
+  animation: slideUp 0.2s ease-in-out 0.2s forwards;
 }
 .sidebar-icons li a {
   color: var(--clr-grey-1);
 }
 .sidebar-icons li:nth-of-type(1) {
-  animation-delay: 0.25s;
+  animation-delay: 0.15s;
 }
 .sidebar-icons li:nth-of-type(2) {
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
 }
 .sidebar-icons li:nth-of-type(3) {
-  animation-delay: 0.75s;
+  animation-delay: 0.45s;
 }
 .sidebar-icons li:nth-of-type(4) {
-  animation-delay: 1s;
+  animation-delay: 0.6s;
 }
 .sidebar-icons li:nth-of-type(5) {
-  animation-delay: 1.25s;
+  animation-delay: 0.6s;
 }
 @keyframes slideUp {
   0% {
@@ -534,12 +536,6 @@ Services
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
-.service .underline {
-  width: 3rem;
-  height: 0.12rem;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
 .service p {
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -601,22 +597,17 @@ Jobs
 }
 .job-btn:hover {
   color: var(--clr-primary-5);
-  box-shadow: 0 2px var(--clr-primary-5);
 }
 .active-btn {
   color: var(--clr-primary-5);
-  box-shadow: 0 2px var(--clr-primary-5);
-}
-.job-info {
-  /* min-height: 420px; */
 }
 .job-info h3 {
   font-weight: 400;
 }
 .job-info h4 {
   text-transform: uppercase;
-  color: var(--clr-primary-2);
-  background: var(--clr-grey-9);
+  color: var(--clr-primary-5);
+  background: var(--clr-primary-2);
   display: inline-block;
   padding: 0.375rem 0.75rem;
   border-radius: var(--radius);
@@ -649,10 +640,6 @@ Jobs
   .btn-container {
     flex-direction: column;
     justify-content: flex-start;
-  }
-
-  .active-btn {
-    box-shadow: -2px 0 var(--clr-primary-5);
   }
   .job-btn:hover {
     box-shadow: -2px 0 var(--clr-primary-5);
@@ -731,8 +718,8 @@ Projects
 .project-stack span,
 .about-stack span {
   display: inline-block;
-  background: var(--clr-grey-9);
-  color: var(--clr-primary-10);
+  background: var(--clr-grey-5);
+  color: var(--clr-primary-1);
   margin: 0.25rem;
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
@@ -744,13 +731,13 @@ Projects
   margin-top: 0.5rem;
 }
 .project-icon {
-  color: var(--clr-primary-2);
+  color: var(--clr-primary-4);
   font-size: 1.5rem;
   margin-right: 1rem;
   transition: var(--transition);
 }
 .project-icon:hover {
-  color: var(--clr-primary-1);
+  color: var(--clr-primary-3);
 }
 @media screen and (min-width: 576px) {
   .project-img {
@@ -807,7 +794,7 @@ Projects
 }
 
 .project-links {
-  color: var(--clr-green-dark);
+  color: var(--clr-green-light);
 }
 
 /*
@@ -820,7 +807,8 @@ Footer
 }
 
 .footer-icon {
-  color: var(--clr-green-dark);
+  /* color: var(--clr-green-dark); */
+  color: var(--clr-red-light);
 }
 
 .footer-number {
@@ -850,7 +838,7 @@ Footer
 .footer-links {
   margin: 0 auto 1rem auto;
   float: right;
-  width: 300px;
+  width: 200px;
   padding: 10px 10px;
   padding-right: 30px;
 }
@@ -867,7 +855,7 @@ Pages
 */
 
 .plant {
-  width: 200px;
+  width: 150px;
 }
 .coffee {
   padding-top: 0;
